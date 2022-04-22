@@ -1,0 +1,131 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--color-bg-main);
+}
+
+.menu-section {
+  z-index: 100;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-bg-card);
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 28px -3px rgba(0,0,0,0.76);
+  -webkit-box-shadow: 2px 2px 28px -3px rgba(0,0,0,0.76);
+  -moz-box-shadow: 2px 2px 28px -3px rgba(0,0,0,0.76);
+}
+
+.menu > .menu-list {
+  padding: 0.75rem;
+}
+
+.menu > .menu-list-active > a > i {
+  color: var(--color-primary);
+}
+
+.menu > .menu-list > a{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+.menu > .menu-list > a:hover{
+  color: var(--color-primary);
+}
+
+.menu > .menu-list > a > i{
+  margin: 0.5rem;
+}
+
+.page-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.page-wrapper {
+  padding: 2.4rem;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.btn-theme {
+  cursor: pointer;
+}
+
+.btn {
+  justify-content: center;
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg-main);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-text-secondary);
+}
+
+.btn-secondary {
+  margin-top: 1rem;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-bg-card);
+}
+
+@media all and (max-width: 720px) {
+  /* .menu-section {
+    
+  } */
+
+  .menu {
+    grid-template-columns: 33% 33% 33%;
+    border-radius: 0px;
+    z-index: 100;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--color-bg-card);
+    box-shadow: 2px 2px 12px -3px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 2px 2px 12px -3px rgba(0,0,0,0.76);
+    -moz-box-shadow: 2px 2px 12px -3px rgba(0,0,0,0.76);
+  }
+
+  .menu > .menu-list {
+    display: grid;
+    justify-content: center;
+    padding: 0.65rem 0px;
+  }
+
+  .page-wrapper {
+    padding: 0rem;
+    margin-bottom: 50px;
+  }
+} 
